@@ -30,7 +30,7 @@ export default: {
 ```
 
 ## Module options
-You can customize how VCC works by providing custom options to in in `nuxt.config.js`:
+You can customize how VCC works by providing it with appropriate options in `nuxt.config.js`:
 
 ```js
 export default: {
