@@ -1,6 +1,18 @@
 # vsf-commercetools-configurator
 A simple Nuxt module that reads Commercetools project data and generates VSF i18n (locale, country, currency) configuration.
 
+## Why should I use it?
+VCC will save you some time by generating your project's `i18n` configuration you'd normally have to do manually. It will:
+- set the default currency and country for you (depending on which country you've placed on top of the countries list in your Merchant panel)
+- generate `countries` objects (including states: any state you've used for a particular country in any of your project's `taxCategories` will find its way to this object. It means no more problems with disappearing shipping methods in checkout!)
+- generate `currencies`
+- generate `locales`
+- generate `vueI18n.numberFormats`
+
+VCC will also tweak your language/locale settings you'd normally have to edit in `middleware.config.js`:
+- generate `acceptLanguages`  (no more problems with product disappearing product names in ProductCards or Cart and Wishlist sidebars!)
+- generate `currency`
+- generate `country`
 ## Installation
 1. Add the VCC dependency to your package.json:
 ```json
