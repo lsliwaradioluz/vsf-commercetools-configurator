@@ -24,7 +24,6 @@ const _getDefaultLocaleFilePath = async (rootDirectoryPath, langDir) => {
 };
 
 export const getStatesPerCountry = (taxCategories) => {
-  fs.writeFile(path.resolve('./taxes.json'), JSON.stringify(taxCategories, null, 2));
   return taxCategories.reduce((SPC, taxCategory) => {
     // Get taxCategorySPC object containing all countries codes as keys and their states array as value from each taxCategory's rate
     const taxCategorySPC = taxCategory.rates.reduce((accumulator, rate) => ({
