@@ -1,4 +1,5 @@
 import query from './defaultQuery';
+import gql from 'graphql-tag';
 
 export default async (client, options, context) => {
   const {
@@ -8,7 +9,7 @@ export default async (client, options, context) => {
   if (!fetchCategories) return
   
   const { data: { categorySearch: { results: categories }} } = await client.query({
-    query: categoriesQuery,
+    query: gql`${categoriesQuery}`,
     fetchPolicy: 'no-cache'
   });
 
