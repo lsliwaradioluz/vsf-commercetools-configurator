@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 
 export default gql`
 query {
-  categorySearch {
+  categorySearch(queryFilters: ["ancestors:missing"]) {
     results {
       id
       stagedProductCount
