@@ -1,5 +1,6 @@
 import cl from 'countries-list';
 import currencies from '../helpers/currencies.json';
+import { injectCountries } from '../helpers/countries';
 import {
   getCountryCodeFromLanguage,
   getCurrencyForCountryCode,
@@ -11,6 +12,8 @@ import {
 import query from './defaultQuery';
 import fs from 'fs/promises';
 import path from 'path';
+
+injectCountries(cl.countries);
 
 export default async (client, options, context) => {
   // Read module options
