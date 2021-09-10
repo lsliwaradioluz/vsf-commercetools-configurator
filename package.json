@@ -1,0 +1,12 @@
+{
+  "name": "ct-configurator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Łukasz <lsliwaradioluz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue-storefront/commercetools-api": "^1.2.4",
+    "countries-list": "^2.6.1",
+    "graphql-tag": "^2.12.5"
+  }
+}
