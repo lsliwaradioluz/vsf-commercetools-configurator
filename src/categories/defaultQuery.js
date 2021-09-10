@@ -5,6 +5,7 @@ query {
   categorySearch {
     results {
       id
+      stagedProductCount
       slugAllLocales {
         value
         locale
@@ -28,6 +29,7 @@ query {
 
 fragment CategorySearchChildren on CategorySearch {
   id
+  stagedProductCount
   slugAllLocales {
     value
     locale
