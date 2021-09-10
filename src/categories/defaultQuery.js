@@ -1,8 +1,8 @@
 import gql from 'graphql-tag';
 
 export default gql`
-  query ($filter: [SearchFilter!]) {
-  categorySearch(filters: $filter) {
+query {
+  categorySearch {
     results {
       id
       slugAllLocales {
