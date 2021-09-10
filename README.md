@@ -17,14 +17,14 @@ VCC will also tweak your language/locale settings you'd normally have to edit in
 1. Add the VCC dependency to your package.json:
 ```json
 "dependencies": {
-  "ct-configurator": "git+https://github.com/lsliwaradioluz/vsf-commercetools-configurator.git",
+  "@vue-storefront/commercetools-configurator": "git+https://github.com/lsliwaradioluz/vsf-commercetools-configurator.git",
 }
 ```
 2. Add the VCC module to your `buildModules` in `nuxt.config.js`:
 ```js
 export default: {
   buildModules: [
-    ['ct-configurator', { /* module options here */}]
+    ['@vue-storefront/commercetools-configurator', { /* module options here */}]
   ]
 }
 ```
@@ -35,7 +35,7 @@ You can customize how VCC works by providing it with appropriate options in `nux
 ```js
 export default: {
   buildModules: [
-    ['ct-configurator', {
+    ['@vue-storefront/commercetools-configurator', {
       replaceRuntimeConfiguration: true,
       writeConfigToFile: false,
       fetchCategories: true,

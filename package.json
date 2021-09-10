@@ -1,5 +1,5 @@
 {
-  "name": "ct-configurator",
+  "name": "@vue-storefront/commercetools-configurator",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Łukasz <lsliwaradioluz@gmail.com>",
