@@ -84,6 +84,7 @@ export const getLocaleLabel = (language) => {
 export const getCurrencyForCountryCode = (language) => {
   const [, countryCode] = language.split('-');
   const currencies = countryCode && cl.countries[countryCode].currency;
+  if (!currencies) return
   const firstCurrency = currencies.split(',')[0];
   return firstCurrency;
 };
